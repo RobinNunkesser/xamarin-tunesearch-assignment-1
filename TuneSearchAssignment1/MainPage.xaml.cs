@@ -5,8 +5,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ExplicitArchitecture;
-using ExplicitArchitecture.TuneSearchExample.Core.Ports;
+using CommonPorts;
+using MusicPorts;
 using ExplicitArchitecture.TuneSearchExample.MockCore;
 using Xamarin.Forms;
 
@@ -29,13 +29,13 @@ namespace TuneSearchAssignment1
 
         private void ErrorHandler(Exception obj)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void SuccessHandler(List<ICollectionEntity> obj)
         {
             Debug.WriteLine(obj.ToString());
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
